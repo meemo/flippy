@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+"""Entry point for flippy CLI."""
+
+import os
+import sys
+
+here = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(here, "src"))
+
+from cli import main
+sys.exit(main())
